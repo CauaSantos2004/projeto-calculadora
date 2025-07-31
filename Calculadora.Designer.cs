@@ -28,18 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblNumero1 = new Label();
+            textNumero1 = new TextBox();
+            lblNumero2 = new Label();
+            textBox1 = new TextBox();
+            btnSomar = new Button();
+            btnSubtrair = new Button();
+            btnMultiplicar = new Button();
+            btnDividir = new Button();
+            lblResultado = new Label();
             SuspendLayout();
+            // 
+            // lblNumero1
+            // 
+            lblNumero1.AutoSize = true;
+            lblNumero1.Location = new Point(11, 16);
+            lblNumero1.Name = "lblNumero1";
+            lblNumero1.Size = new Size(60, 15);
+            lblNumero1.TabIndex = 0;
+            lblNumero1.Text = "Número 1";
+            // 
+            // textNumero1
+            // 
+            textNumero1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textNumero1.Location = new Point(14, 36);
+            textNumero1.Name = "textNumero1";
+            textNumero1.Size = new Size(100, 29);
+            textNumero1.TabIndex = 1;
+            // 
+            // lblNumero2
+            // 
+            lblNumero2.AutoSize = true;
+            lblNumero2.Location = new Point(136, 16);
+            lblNumero2.Name = "lblNumero2";
+            lblNumero2.Size = new Size(60, 15);
+            lblNumero2.TabIndex = 2;
+            lblNumero2.Text = "Número 2";
+            lblNumero2.Click += label1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(136, 36);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 29);
+            textBox1.TabIndex = 3;
+            // 
+            // btnSomar
+            // 
+            btnSomar.Location = new Point(24, 100);
+            btnSomar.Name = "btnSomar";
+            btnSomar.Size = new Size(75, 23);
+            btnSomar.TabIndex = 4;
+            btnSomar.Text = "Somar";
+            btnSomar.UseVisualStyleBackColor = true;
+            // 
+            // btnSubtrair
+            // 
+            btnSubtrair.Location = new Point(105, 100);
+            btnSubtrair.Name = "btnSubtrair";
+            btnSubtrair.Size = new Size(75, 23);
+            btnSubtrair.TabIndex = 5;
+            btnSubtrair.Text = "Subtrair";
+            btnSubtrair.UseVisualStyleBackColor = true;
+            // 
+            // btnMultiplicar
+            // 
+            btnMultiplicar.Location = new Point(186, 100);
+            btnMultiplicar.Name = "btnMultiplicar";
+            btnMultiplicar.Size = new Size(75, 23);
+            btnMultiplicar.TabIndex = 6;
+            btnMultiplicar.Text = "Multiplicar";
+            btnMultiplicar.UseVisualStyleBackColor = true;
+            // 
+            // btnDividir
+            // 
+            btnDividir.Location = new Point(267, 100);
+            btnDividir.Name = "btnDividir";
+            btnDividir.Size = new Size(75, 23);
+            btnDividir.TabIndex = 7;
+            btnDividir.Text = "Dividir";
+            btnDividir.UseVisualStyleBackColor = true;
+            // 
+            // lblResultado
+            // 
+            lblResultado.AutoSize = true;
+            lblResultado.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblResultado.Location = new Point(308, 36);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(28, 32);
+            lblResultado.TabIndex = 8;
+            lblResultado.Text = "0";
+            lblResultado.Click += lblResultado_Click;
             // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(359, 450);
+            ClientSize = new Size(359, 133);
+            Controls.Add(lblResultado);
+            Controls.Add(btnDividir);
+            Controls.Add(btnMultiplicar);
+            Controls.Add(btnSubtrair);
+            Controls.Add(btnSomar);
+            Controls.Add(textBox1);
+            Controls.Add(lblNumero2);
+            Controls.Add(textNumero1);
+            Controls.Add(lblNumero1);
             Name = "Calculadora";
             Text = "Calculadora";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblNumero1;
+        private TextBox textNumero1;
+        private Label lblNumero2;
+        private TextBox textBox1;
+        private Button btnSomar;
+        private Button btnSubtrair;
+        private Button btnMultiplicar;
+        private Button btnDividir;
+        private Label lblResultado;
     }
 }
