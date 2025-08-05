@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             lblNumero1 = new Label();
-            textNumero1 = new TextBox();
+            txtNumero1 = new TextBox();
             lblNumero2 = new Label();
-            textBox1 = new TextBox();
+            txtNumero2 = new TextBox();
             btnSomar = new Button();
             btnSubtrair = new Button();
             btnMultiplicar = new Button();
@@ -48,13 +48,13 @@
             lblNumero1.TabIndex = 0;
             lblNumero1.Text = "Número 1";
             // 
-            // textNumero1
+            // txtNumero1
             // 
-            textNumero1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textNumero1.Location = new Point(14, 36);
-            textNumero1.Name = "textNumero1";
-            textNumero1.Size = new Size(100, 29);
-            textNumero1.TabIndex = 1;
+            txtNumero1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNumero1.Location = new Point(14, 36);
+            txtNumero1.Name = "txtNumero1";
+            txtNumero1.Size = new Size(100, 29);
+            txtNumero1.TabIndex = 1;
             // 
             // lblNumero2
             // 
@@ -66,13 +66,13 @@
             lblNumero2.Text = "Número 2";
             lblNumero2.Click += label1_Click;
             // 
-            // textBox1
+            // txtNumero2
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(136, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 29);
-            textBox1.TabIndex = 3;
+            txtNumero2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNumero2.Location = new Point(136, 36);
+            txtNumero2.Name = "txtNumero2";
+            txtNumero2.Size = new Size(100, 29);
+            txtNumero2.TabIndex = 3;
             // 
             // btnSomar
             // 
@@ -82,6 +82,7 @@
             btnSomar.TabIndex = 4;
             btnSomar.Text = "Somar";
             btnSomar.UseVisualStyleBackColor = true;
+            btnSomar.Click += btnSomar_Click;
             // 
             // btnSubtrair
             // 
@@ -131,9 +132,9 @@
             Controls.Add(btnMultiplicar);
             Controls.Add(btnSubtrair);
             Controls.Add(btnSomar);
-            Controls.Add(textBox1);
+            Controls.Add(txtNumero2);
             Controls.Add(lblNumero2);
-            Controls.Add(textNumero1);
+            Controls.Add(txtNumero1);
             Controls.Add(lblNumero1);
             Name = "Calculadora";
             Text = "Calculadora";
@@ -144,9 +145,9 @@
         #endregion
 
         private Label lblNumero1;
-        private TextBox textNumero1;
+        private TextBox txtNumero1;
         private Label lblNumero2;
-        private TextBox textBox1;
+        private TextBox txtNumero2;
         private Button btnSomar;
         private Button btnSubtrair;
         private Button btnMultiplicar;
