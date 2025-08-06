@@ -92,6 +92,7 @@
             btnSubtrair.TabIndex = 5;
             btnSubtrair.Text = "Subtrair";
             btnSubtrair.UseVisualStyleBackColor = true;
+            btnSubtrair.Click += btnSubtrair_Click;
             // 
             // btnMultiplicar
             // 
@@ -101,6 +102,7 @@
             btnMultiplicar.TabIndex = 6;
             btnMultiplicar.Text = "Multiplicar";
             btnMultiplicar.UseVisualStyleBackColor = true;
+            btnMultiplicar.Click += btnMultiplicar_Click;
             // 
             // btnDividir
             // 
