@@ -43,5 +43,16 @@ namespace Calculadora
 
             lblResultado.Text = (numero1 * numero2).ToString();
         }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtNumero1.Text);
+            double numero2 = Convert.ToDouble(txtNumero2.Text);
+
+            // Divide o valor de numero1 por numero2 e converte o resultado para string.
+            // Em seguida, exibe o resultado no componente lblResultado (geralmente um Label ou TextBox).
+            lblResultado.Text = (numero1 / numero2).ToString();
+;
+        }
     }
 }
